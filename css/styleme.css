@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+
+.heading {
+    color: rgb(116, 116, 166);
+    font: normal bold 1.5em Garamond, "Times New Roman", serif;
+}
+h1#name{
+    margin:0 0 30px 0;
+    font-size: 3em;
+}
+p, ul > li{
+   font-family: 'Courier New', Courier, monospace; 
+}
+p > b{
+ color: yellow;
+}
+
+#movies ul li {
+    list-style-type: decimal;
+}
+
+#movies p {
+    font-style: italic;
+}
+
+li > a {
+    color:red;
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration:underline;
+}
+img {
+    border: 1px solid white;
+}
+#neighbors > article > ul > li > span {
+    font-style: italic;
+    font-weight: bold;
+}
