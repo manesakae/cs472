@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    font-size: 11pt;
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+}
+.heading {
+    color:#A4A400;
+    background-color: #F0F0F0 ;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-erif ;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 18pt;
+    text-align: left;
+}
+header > h2.heading {
+    font-weight: bold;
+    font-size: 22pt;
+    text-align: center;
+}
+a {
+    color: #A4A400;
+}
+abbr {
+    text-decoration: underline;
+}
+#cut {
+    text-decoration: line-through;
+}
+footer > div {
+    text-align: right;
+}
+footer > div:last-child{
+    font-family: monospace;
+}
+.highlight{
+    font-weight: bold;
+}
+#usercomments > div {
+    background-color: #FFFFA8;
+    margin: 5px 40px;
+}
+#usercomments > div > p {
+    font-style: italic;
+}
