@@ -29,6 +29,13 @@ a {
 ul > li {
     list-style-image: url(../images/pie_icon.gif);
 }
+div#pie > ul {
+    padding: 0;
+}
+div#pie > ul >li {
+    list-style-type: none;
+    list-style-image: none;
+}
 abbr {
     text-decoration: underline;
 }
