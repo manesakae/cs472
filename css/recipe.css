@@ -51,10 +51,6 @@ footer > div:last-child{
 .highlight{
     font-weight: bold;
 }
-#usercomments > div {
+#usercomments > blockquote > div {
     background-color: #FFFFA8;
-    margin: 5px 40px;
-}
-#usercomments > div > p {
-    font-style: italic;
 }
