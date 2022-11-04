@@ -54,3 +54,6 @@ footer > div:last-child{
 #usercomments > blockquote > div {
     background-color: #FFFFA8;
 }
+#usercomments > blockquote > div > p{
+   font-style: italic;
+}
