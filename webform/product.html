@@ -48,7 +48,7 @@
                 </div>
                 <div class="col mb-3">
                     <label for="quantity" class="form-label text-secondary">Quantity in stock</label>
-                    <input type="number" class="form-control" id="quantity" value="0" pattern=".*[0-9]" required>
+                    <input type="number" class="form-control" id="quantity" value="0" required>
                 </div>
             </div>
             <div class="row">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col mb-3">
                     <label for="supplier" class="form-label text-secondary">Supplier:</label>
-                    <select class="form-select  text-secondary" aria-label="Select a supplier" id="supplier" required>
+                    <select class="form-select  text-secondary" aria-label="Select a supplier" id="supplier">
                         <option selected>Select a supplier</option>
                         <option value="1">Supplier One</option>
                         <option value="2">Supplier Two</option>
@@ -69,13 +69,13 @@
             <div class="row">
                 <div class="col mb-3">
                     <label for="unitPrice" class="form-label text-secondary">Unit Price</label>
-                    <input type="number" class="form-control" id="unitPrice" value="0.0" step="0.1" pattern="[0-9]+(\.[0-9])?" required>
+                    <input type="number" class="form-control" id="unitPrice" value="0.0" step="0.1" required>
                 </div>
                 <div class="col mb-3">
                     <!-- date validation  -->
                     <label for="date" class="form-label text-secondary">Date supplied</label>
                     <input type="date" class="form-control" id="date" aria-describedby="dateHelp"
-                        placeholder="yyyy-mm-dd" required>
+                        required>
                     <div id="dateHelp" class="form-text">Enter a valid Date.</div>
                 </div>
             </div>
