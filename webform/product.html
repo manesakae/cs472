@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <style>
+        nav.navbar {
+            background-color: #29a1e6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white pr-5 mr-5">MUM Golden Dome Market ::: SRM System</a>
+                <ul class="nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-5 text-white border-start" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5 text-white border-start" href="#">Suppliers</a>
+                    </li>
+                </ul>
+                <div class="d-flex" role="search">
+                    <a class="navbar-brand text-white" href="#">Hello!</a>
+                    <button class="btn btn-light" type="submit">Sign Out</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="m-5">
+        <h2 class="pb-2 fw-light">New Product Form</h2>
+        <form id="product" method="get" action="formprocessor.html">
+            <div class="row">
+                <div class="col mb-3">
+                    <label for="productNumber" class="form-label text-secondary">Product Number</label>
+                    <input type="text" class="form-control" id="productNumber" required>
+                </div>
+                <div class="col mb-3">
+                    <label for="quantity" class="form-label text-secondary">Quantity in stock</label>
+                    <input type="number" class="form-control" id="quantity" value="0" pattern=".*[0-9]" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <label for="name" class="form-label text-secondary">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col mb-3">
+                    <label for="supplier" class="form-label text-secondary">Supplier:</label>
+                    <select class="form-select  text-secondary" aria-label="Select a supplier" id="supplier" required>
+                        <option selected>Select a supplier</option>
+                        <option value="1">Supplier One</option>
+                        <option value="2">Supplier Two</option>
+                        <option value="3">Supplier Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <label for="unitPrice" class="form-label text-secondary">Unit Price</label>
+                    <input type="number" class="form-control" id="unitPrice" value="0.0" step="0.1" pattern="[0-9]+(\.[0-9])?" required>
+                </div>
+                <div class="col mb-3">
+                    <!-- date validation  -->
+                    <label for="date" class="form-label text-secondary">Date supplied</label>
+                    <input type="date" class="form-control" id="date" aria-describedby="dateHelp"
+                        placeholder="yyyy-mm-dd" required>
+                    <div id="dateHelp" class="form-text">Enter a valid Date.</div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="reset" class="btn btn-outline-dark m-3">Reset</button>
+                <button type="reset" class="btn btn-outline-danger m-3">Cancel</button>
+                <button type="submit" class="btn btn-outline-primary m-3">Add Product</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
