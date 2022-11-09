@@ -2,6 +2,7 @@
 
 // --- Question 1 ---
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
+// Option1:
 function max(x, y) {
     if (x > y) 
         return x;
@@ -11,6 +12,30 @@ function max(x, y) {
 console.log("1. Solution for max(3,7): " + max(3,7));
 const sol1 = "1. Solution for max(3,7): " + max(3,7);
 document.getElementById("sol1").innerHTML = sol1 ;
+
+// Option2:
+const max2 = function(x,y){
+    if (x > y) 
+        return x;
+    else
+        return y;
+};
+console.log("Max of 4 and 6 is " + max2(4,6));
+console.log(`Max of 4 and 6 is ${max2(4,6)}`);
+
+// Option3:
+const max3 = (x,y) =>{
+    if (x > y) 
+        return x;
+    else
+        return y;
+};
+console.log(`Max of 4 and 6 is ${max3(4,6)}`);
+
+// Option4:
+const max4 = (x,y) => (x > y) ? x : y;
+console.log(`Max of 4 and 6 is ${max4(4,6)}`);
+
 
 
 // --- Question 2 ---
