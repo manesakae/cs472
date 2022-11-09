@@ -24,7 +24,7 @@
 <body>
     <main>
         <h2>Login Web Form</h2>
-        <form id="login" method="get" action="formprocessor.html">
+        <form id="login" method="post">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -44,6 +44,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <div style="border: 1px solid black;height:5vh">
+            <span id="spanEmail"></span> <br>
+            <span id="spanPsw"></span>
+        </div>
     </main>
     <script src="../js/login.js"></script>
 </body>

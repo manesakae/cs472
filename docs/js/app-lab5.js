@@ -52,6 +52,7 @@ document.getElementById("sol2").innerHTML = sol2 ;
 
 // --- Question 3 ---
 // Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+// Option1:
 function isVowel(c) {
     c = c.toLowerCase();
     if (c == 'a' || c == 'e' ||c == 'i' ||c == 'o' ||c == 'u') 
@@ -66,10 +67,27 @@ function isVowel(c) {
  document.getElementById("sol3_1").innerHTML = sol3_1 ;
  document.getElementById("sol3_2").innerHTML = sol3_2 ;
 
+// Option2:
+function isVowel2(charIn) {
+    const char = charIn.toLowerCase();
+    switch(char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return true;
+        default:
+            return false;
+    }
+}
+console.log(`b is vowel: ${isVowel2('b')}`);
+
 
  // --- Question 4 ---
 //  Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an input array of 
 // numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24. Note/Hint: Do these using Imperative programming approach (i.e. for…loop or while…loop)
+// Option1:
 function sum(array) {
     let sum = 0;
    for (let index = 0; index < array.length; index++) {
@@ -90,6 +108,17 @@ function sum(array) {
  const sol4_2 = "4. Solution for multiply([1,2,3,4]): " + multiply([1,2,3,4]);
  document.getElementById("sol4_1").innerHTML = sol4_1 ;
  document.getElementById("sol4_2").innerHTML = sol4_2 ;
+
+//  Option2:
+const sum2 = (array) => {
+    let sum = 0;
+    for(let a of array) {
+        sum += a;
+    }
+    return sum;
+}
+console.log(`sum of 1,2,3,4 is : ${sum2([1,2,3,4])}`);
+
 
 
 // --- Question 5 ---
