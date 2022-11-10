@@ -22,6 +22,7 @@ window.onload = function () {
 
         document.getElementById("spanEmail").innerHTML = `Your email is ${txtEmail.value}`;
         document.getElementById("spanPsw").innerHTML = `Your password is ${txtPassword.value}`;
+        document.getElementById("spanWeb").innerHTML = `Your website is ${txtWebsite.value}`;
 
         txtEmail.value = '';
         txtPassword.value = '';
