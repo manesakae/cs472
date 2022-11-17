@@ -77,6 +77,26 @@ add7();
 add7();
 console.log("after add 7 three times", make_count.value());
 
+//Option2- Question8
+console.log("---Question 8 Solution Option2-----");
+const make_adder = function(inc) {
+    let counter = 0;
+    const add = function(){
+        counter += inc;
+        console.log(`Counter value is ${counter}`);
+        return counter;
+    }
+    return add;
+}
+const add_5 = make_adder(5);
+add_5();
+add_5();
+add_5();
+const add_7 = make_adder(7);
+add_7();
+add_7();
+add_7();
+
 //Question 9
 console.log("---Question 9 Solution-----");
 console.log(`By making it as Module Pattern, one can remove all names from the Global namespace`);
